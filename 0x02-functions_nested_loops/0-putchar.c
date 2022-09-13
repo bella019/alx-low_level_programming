@@ -1,10 +1,12 @@
 #include "main.h"
 /**
  * main - prints Putchar , followed by a new line
- * REturns: 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
+	putchar(char c);
+
 	putchar('p');
 	putchar('u');
 	putchar('t');
