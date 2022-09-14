@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include "main.h"
 /**
  * main - prints Putchar , followed by a new line
@@ -5,8 +8,6 @@
  */
 int main(void)
 {
-	char ch;
-
 	putchar('p');
 	putchar('u');
 	putchar('t');
