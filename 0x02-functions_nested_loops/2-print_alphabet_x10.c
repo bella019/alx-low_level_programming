@@ -3,7 +3,7 @@
  * main - prints alphabet in lowercase ten times followed by a new line
  * Return: 0 (success)
  */
-void print_alphabet_x10(void)
+void print_alphabetx10(void)
 {
 	int n, co;
 	co = 0;
