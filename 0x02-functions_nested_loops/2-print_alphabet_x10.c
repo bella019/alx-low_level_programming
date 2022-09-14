@@ -3,18 +3,22 @@
  * main - prints alphabet in lowercase ten times followed by a new line
  * Return: 0 (success)
  */
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
-	int n, co;
-	co = 0;
+	char ch;
+	int i;
+	i = 0;
 
-	while (co < 10)
+	while (i < 10)
 	{
-		for (n = 'a'; n <= 'z'; n++)
+		ch = 'a';
+		while (ch <= 'z')
 		{
-			_putchar(n);
+			_putchar(ch);
+			ch++;
 		}
-		co++;
-		_putchar('\n');
+		
+			_putchar('\n');
+			i++;
 	}
 }
