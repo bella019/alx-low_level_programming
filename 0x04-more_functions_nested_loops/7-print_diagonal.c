@@ -5,16 +5,17 @@
  */
 void print_diagonal(int n)
 {
+	int co, sp;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
-	} else
+	}
+	else
 	{
-		int i, j;
-
-		for (i = 1; i < n; i++)
+		for (co = 1; co <= n; co++)
 		{
-			for (j = 1; j < n; j++)
+			for (sp = 1; sp < co; sp++)
 			{
 				_putchar(' ');
 			}
