@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_arrat - function prints n elements of  int array
+ * print_array - function prints n elements of  int array
  * @a: char point
  * @n: interger
  * Return: 0
