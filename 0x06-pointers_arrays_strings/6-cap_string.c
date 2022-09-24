@@ -4,7 +4,7 @@
  * @str: string to be capitlized
  * Return: char *
  */
-char *cap_string(char *)
+char *cap_string(char *n)
 {
 	int count;
 	int count2;
