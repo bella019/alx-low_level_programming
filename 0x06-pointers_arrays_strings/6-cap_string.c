@@ -1,29 +1,28 @@
 #include "main.h"
 /**
  * cap_string - Cptilizes words of a string
- * @n: string to be capitlized
+ * @s: string to be capitlized
  * Return: char *
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-	int count;
-	int count2;
-	char *x = ".,{}()\n\t\"?!";
+	int i, j;
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (count = 0; *(n + count) != '\0'; count++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (count2 = 0; *(x + count2) != '\0'; count2++)
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		for (j = 0; j < 13; j++)
 		{
-			if (*(n + count - 1) == *(x + count2) && *(n + count) >=
-			'a' && *(n + count) <= 'z')
+			if (s[i] == spe[j])
 			{
-				*(n + count) = ('A' - 'a') + *(n + count);
-			}
-			else if ((count == 0) && *(n + count) >= 'a' && *(n + count) <= 'z')
-			{
-				*(n + count) = ('A' - 'a') + *(n + count);
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
 			}
 		}
 	}
-	return (0);
+	return (s);
 }
