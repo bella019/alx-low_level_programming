@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * cap_string - Cptilizes words of a string
- * @str: string to be capitlized
+ * @n: string to be capitlized
  * Return: char *
  */
 char *cap_string(char *n)
